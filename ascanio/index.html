@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aprender C# básico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Aprende C# desde cero</h1>
+
+  <h2>1. ¿Qué es C#?</h2>
+  <p>
+    C# es un lenguaje de programación creado por Microsoft.
+    Se usa para hacer programas, aplicaciones, videojuegos y sistemas web.
+  </p>
+
+  <h2>2. Tu primer programa</h2>
+  <p>Este código muestra un mensaje en pantalla:</p>
+
+  <pre>
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hola, mundo");
+    }
+}
+  </pre>
+
+  <p>
+    <code>Console.WriteLine()</code> sirve para mostrar texto en la consola.
+  </p>
+
+  <h2>3. Variables</h2>
+  <p>Una variable guarda información para usarla después.</p>
+
+  <pre>
+string nombre = "Ana";
+int edad = 20;
+double altura = 1.70;
+bool esEstudiante = true;
+
+Console.WriteLine(nombre);
+Console.WriteLine(edad);
+  </pre>
+
+  <p>Tipos más comunes:</p>
+  <ul>
+    <li><code>int</code>: números enteros, por ejemplo 20.</li>
+    <li><code>double</code>: números decimales, por ejemplo 1.70.</li>
+    <li><code>string</code>: texto, por ejemplo "Ana".</li>
+    <li><code>bool</code>: verdadero o falso.</li>
+  </ul>
+
+  <h2>4. Condicionales</h2>
+  <p>Con <code>if</code> el programa toma decisiones.</p>
+
+  <pre>
+int edad = 18;
+
+if (edad >= 18)
+{
+    Console.WriteLine("Eres mayor de edad");
+}
+else
+{
+    Console.WriteLine("Eres menor de edad");
+}
+  </pre>
+
+  <h2>5. Bucles</h2>
+  <p>Los bucles repiten código varias veces.</p>
+
+  <pre>
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine("Número: " + i);
+}
+  </pre>
+
+  <p>Este código muestra los números del 1 al 5.</p>
+
+  <h2>6. Funciones</h2>
+  <p>Una función sirve para reutilizar código.</p>
+
+  <pre>
+static int Sumar(int a, int b)
+{
+    return a + b;
+}
+
+static void Main()
+{
+    int resultado = Sumar(5, 3);
+    Console.WriteLine(resultado);
+}
+  </pre>
+
+  <p>El resultado será <code>8</code>.</p>
+
+  <h2>7. Ejercicio</h2>
+  <p>Crea un programa que muestre tu nombre y tu edad:</p>
+
+  <pre>
+string nombre = "Tu nombre";
+int edad = 18;
+
+Console.WriteLine("Mi nombre es: " + nombre);
+Console.WriteLine("Mi edad es: " + edad);
+  </pre>
+
+</body>
+</html>
